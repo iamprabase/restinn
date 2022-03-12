@@ -5,9 +5,76 @@ body {
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  background: mintcream;
 }
 
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.card-title, .card-header {
+  color: #333;
+}
+
+.m-head {
+  margin: auto !important;
+  padding: 30px;
+  font-family: sans-serif;
+  color: currentcolor;
+  font-size: 40px;
+}
+
+.carousel-indicators .active {
+  opacity: 1;
+}
+
+.carousel-indicators [data-bs-target] {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 3px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: .5;
+  transition: opacity .6s ease;
+}
+
+.carousel-caption h3 {
+  color: #fff;
+  font-size: 50px;
+  font-weight: 600;
+  letter-spacing: 10px;
+}
+
+.navbar-nav a {
+  font-size: 14px;
+}
+
+.fa{
+  padding-right: 10px;
+}
+
+.footer{
+  background: #152F4F;
+  color:white;
+}
+
+.footer h1, h2, h3, h4, a {
+  color: #ffff
+}
+
+.footer ul {list-style-type: none;}
+
+.form-label, .form-check-label{
+  -webkit-text-stroke: medium;
+  letter-spacing: 2px;
 }

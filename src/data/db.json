@@ -1,0 +1,148 @@
+{
+  "homescreensliders": [
+    {
+      "id": 1,
+      "name": "Property 1",
+      "image": "http://www.millenniumparkpanchgani.com/mobile/images/folder/slider-1.jpg"
+    },
+    {
+      "id": 2,
+      "name": "Property 2",
+      "image": "http://hotel.excessbd.com/wp-content/uploads/2020/01/slider_book-now-1024x360.jpg"
+    },
+    {
+      "id": 3,
+      "name": "Property 3",
+      "image": "https://jssors8.azureedge.net/demos/image-slider/img/px-action-athlete-athletes-848618-image.jpg"
+    }
+  ],
+
+  "propertylistings": [
+    {
+      "id": "1",
+      "name": "Shepherd's Inn",
+      "image": "../assets/images/shepherd.png",
+      "description": "Located beside the swimming pool, our charming Pond Rooms are full of character. These rooms offer perfect holiday or business accommodation for couples or solo travellers.",
+      "category": "Flat / Condo",
+      "price": "from US$110 / TTD$715 per night",
+      "rating": 2.5,
+      "location": "Canada",
+      "numReviews": 12,
+      "tags": [],
+      "amenities": ["Swimming Pool", "Bar", "Parking"],
+      "house_rules": ["No Loud Music", "No Late Night Parties"]
+    },
+    {
+      "id": "2",
+      "name": "Shepherd's Inn",
+      "image": "../assets/images/shepherd.png",
+      "description": "Located beside the swimming pool, our charming Pond Rooms are full of character. These rooms offer perfect holiday or business accommodation for couples or solo travellers.",
+      "category": "Resorts",
+      "price": "from US$110 / TTD$715 per night",
+      "rating": 2,
+      "location": "Canada",
+      "numReviews": 12,
+      "tags": [],
+      "amenities": ["Swimming Pool", "Bar", "Parking"],
+      "house_rules": ["No Loud Music", "No Late Night Parties"]
+    },
+    {
+      "id": "3",
+      "name": "Shepherd's Inn",
+      "image": "../assets/images/shepherd.png",
+      "description": "Located beside the swimming pool, our charming Pond Rooms are full of character. These rooms offer perfect holiday or business accommodation for couples or solo travellers.",
+      "category": "Bunglow",
+      "price": "from US$110 / TTD$715 per night",
+      "rating": 4,
+      "location": "Canada",
+      "numReviews": 12,
+      "tags": [],
+      "amenities": ["Swimming Pool", "Bar", "Parking"],
+      "house_rules": ["No Loud Music", "No Late Night Parties"]
+    },
+    {
+      "id": "4",
+      "name": "Shepherd's Inn",
+      "image": "../assets/images/shepherd.png",
+      "description": "Located beside the swimming pool, our charming Pond Rooms are full of character. These rooms offer perfect holiday or business accommodation for couples or solo travellers.",
+      "category": "Flat / Condo",
+      "price": "from US$110 / TTD$715 per night",
+      "rating": 3,
+      "location": "Canada",
+      "numReviews": 12,
+      "tags": [],
+      "amenities": ["Swimming Pool", "Bar", "Parking"],
+      "house_rules": ["No Loud Music", "No Late Night Parties"]
+    },
+    {
+      "id": "5",
+      "name": "Shepherd's Inn",
+      "image": "../assets/images/shepherd.png",
+      "description": "Located beside the swimming pool, our charming Pond Rooms are full of character. These rooms offer perfect holiday or business accommodation for couples or solo travellers.",
+      "category": "Flat / Condo",
+      "price": "from US$110 / TTD$715 per night",
+      "rating": 2,
+      "location": "Canada",
+      "numReviews": 12,
+      "tags": [],
+      "amenities": ["Swimming Pool", "Bar", "Parking"],
+      "house_rules": ["No Loud Music", "No Late Night Parties"]
+    },
+    {
+      "id": "6",
+      "name": "Shepherd's Inn",
+      "image": "../assets/images/shepherd.png",
+      "description": "Located beside the swimming pool, our charming Pond Rooms are full of character. These rooms offer perfect holiday or business accommodation for couples or solo travellers.",
+      "category": "Flat / Condo",
+      "price": "from US$110 / TTD$715 per night",
+      "rating": 4,
+      "location": "Canada",
+      "numReviews": 12,
+      "tags": [],
+      "amenities": ["Swimming Pool", "Bar", "Parking"],
+      "house_rules": ["No Loud Music", "No Late Night Parties"]
+    },
+    {
+      "id": "7",
+      "name": "Shepherd's Inn",
+      "image": "../assets/images/shepherd.png",
+      "description": "Located beside the swimming pool, our charming Pond Rooms are full of character. These rooms offer perfect holiday or business accommodation for couples or solo travellers.",
+      "category": "Flat / Condo",
+      "price": "from US$110 / TTD$715 per night",
+      "rating": 5,
+      "location": "Canada",
+      "numReviews": 12,
+      "tags": [],
+      "amenities": ["Swimming Pool", "Bar", "Parking"],
+      "house_rules": ["No Loud Music", "No Late Night Parties"]
+    }
+  ],
+
+  "propertytypes": [
+    {
+      "id": "1",
+      "name": "Flat / Condo",
+      "image": "https://www.pettyson.co.uk/images/blog_posts/different-types-of-property/block_of_flats.jpg"
+    },
+    {
+      "id": "2",
+      "name": "Bunglow",
+      "image": "https://www.pettyson.co.uk/images/blog_posts/different-types-of-property/uk_bungalow.jpg"
+    },
+    {
+      "id": "3",
+      "name": "Mansion",
+      "image": "https://www.pettyson.co.uk/images/blog_posts/different-types-of-property/mansion_house.jpg"
+    },
+    {
+      "id": "4",
+      "name": "Apartment",
+      "image": "https://media.istockphoto.com/photos/europe-modern-complex-of-residential-buildings-picture-id1165384568"
+    },
+    {
+      "id": "5",
+      "name": "Resorts",
+      "image": "https://static.trip101.com/paragraph_media/pictures/001/769/591/large/Bali%20Mandira%20Beach%20Resort%20_%20Spa%20Swimming%20Pools.jpg?1577423898"
+    }
+  ]
+}
