@@ -10,7 +10,6 @@ import {
   Card,
   Badge,
 } from "react-bootstrap";
-import propertyListingData from "../data/propertyListingData";
 import { Rating } from "../components/Rating";
 import Loader from "../utils/Loader";
 import AlertMessage from "../utils/AlertMessage";
@@ -20,16 +19,40 @@ const PropertyDetailScreen = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState("");
   const { id } = useParams();
+  const [propertyListings, setPropertyListings] = useState([]);
   const [property, setProperty] = useState({});
 
   useEffect(() => {
-    setTimeout(() => {
-      const obj = propertyListingData.find((property) => property.id === id);
+    let mounted = true;
+    if (mounted) {
+      fetchProperty();
+    }
+    return () => (mounted = false);
+  }, [propertyListings, id]);
+
+  useEffect(() => {
+    if (propertyListings.length) {
+      const obj = propertyListings.find((property) => property.id === id);
       if (Object.keys(obj).length === 0) setError("No Properties Found");
       setProperty(obj);
+    }
+  }, [propertyListings]);
+
+  useEffect(() => {
+    if (error || Object.keys(property).length) {
       setLoading(false);
-    }, 200);
-  }, [property, id]);
+    } else {
+      setLoading(true);
+    }
+  }, [error, property, propertyListings]);
+
+  const fetchProperty = () => {
+    // declare the data fetching function
+    fetch(process.env.REACT_APP_PROPERTY_LISTING_ENDPOINT)
+      .then((res) => res.json())
+      .then((result) => setPropertyListings(result))
+      .catch((err) => setError(err));
+  };
 
   return (
     <>
@@ -100,7 +123,7 @@ const PropertyDetailScreen = () => {
                       <Row>
                         <Col>Location:</Col>
                         <Col>
-                            <p className="text-primary">{property.location}</p>
+                          <p className="text-primary">{property.location}</p>
                         </Col>
                       </Row>
                     </ListGroup.Item>
@@ -108,17 +131,17 @@ const PropertyDetailScreen = () => {
                       <Row>
                         <Col>Amenities:</Col>
                         <Col>
-                            <p className="text-primary">
-                              {property.amenities.map((amenity, key) => {
-                                return (
-                                  <span key={key}>
-                                    <Badge bg="info" className="mr-2">
-                                      {amenity}
-                                    </Badge>
-                                  </span>
-                                );
-                              })}
-                            </p>
+                          <p className="text-primary">
+                            {property.amenities.map((amenity, key) => {
+                              return (
+                                <span key={key}>
+                                  <Badge bg="info" className="mr-2">
+                                    {amenity}
+                                  </Badge>
+                                </span>
+                              );
+                            })}
+                          </p>
                         </Col>
                       </Row>
                     </ListGroup.Item>
@@ -126,13 +149,13 @@ const PropertyDetailScreen = () => {
                       <Row>
                         <Col>House Rules:</Col>
                         <Col>
-                              {property.house_rules.map((rule, key) => {
-                                return (
-                                    <p key={key} bg="info" className="mr-2">
-                                        {key+1}. {rule}
-                                    </p>
-                                );
-                              })}
+                          {property.house_rules.map((rule, key) => {
+                            return (
+                              <p key={key} bg="info" className="mr-2">
+                                {key + 1}. {rule}
+                              </p>
+                            );
+                          })}
                         </Col>
                       </Row>
                     </ListGroup.Item>
